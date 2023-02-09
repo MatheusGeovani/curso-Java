@@ -1,8 +1,15 @@
 public class classe {
     public static void main(String[] args) {
-        Jogador jogador1 = new Jogador(1);
-        Jogador jogador2 = new Jogador(2);
-        Jogador jogador3 = new Jogador(3);
+
+        int num = 0;
+
+        Jogador j1 = new Jogador(++num); 
+        Jogador j2 = new Jogador(++num);
+        Jogador j3 = new Jogador(++num);
+
+        j1.setMana(100);
+        System.out.printf("Vidas do jogador 1: %d\n ", j1.getVidas());
+        System.out.printf("Mana do jogador 1: %d", j1.getMana());
+        
     }
-    
 }
