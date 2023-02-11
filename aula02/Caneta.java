@@ -7,7 +7,7 @@ public class Caneta {
     int carga;
     boolean tampada;
     void status(){
-        System.out.print("Uma caneta" + this.cor);
+        System.out.print("Uma caneta " + this.cor);
     }
 
     void rabiscar(){
@@ -17,6 +17,6 @@ public class Caneta {
 
     }
     void destampar(){
-
+        System.out.printf("\nA caneta esta tampada:", this.tampada ? "Sim" : "Nao");
     }
 }

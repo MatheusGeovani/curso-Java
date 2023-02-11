@@ -9,5 +9,6 @@ public class aula02 {
         c1.tampada = false;
         c1.carga = 80;
         c1.status();
+        c1.destampar();
     }
 }
