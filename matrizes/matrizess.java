@@ -1,3 +1,4 @@
+package matrizes;
 public class matrizess {
     public static void main(String[] args) {
         int [][] numeros = {{10,20,40,50,60},{40,20,31,55,90},{30,40,50,60,70}};

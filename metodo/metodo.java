@@ -1,3 +1,4 @@
+package metodo;
 // public class metodo {
 //     public static void main(String[] args) {
 //         mgs("ola");

@@ -1,3 +1,4 @@
+package matrizes;
 import java.security.SecureRandom;
 public class matrizes{
     public static void main(String[] args){

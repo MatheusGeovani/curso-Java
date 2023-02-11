@@ -1,3 +1,4 @@
+package heranca;
 public class carro {
     private String nome;
     private Boolean ligado;

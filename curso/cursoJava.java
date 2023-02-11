@@ -1,3 +1,4 @@
+package curso;
 public class cursoJava {
     public static void main (String[] args){
 

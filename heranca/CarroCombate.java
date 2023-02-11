@@ -1,3 +1,4 @@
+package heranca;
 public class CarroCombate extends carro {
     private final int max_armamento = 100;
     private final int min_armamento = 0;
