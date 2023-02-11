@@ -8,6 +8,8 @@ public class Heranca {
         carroCombate.atirar();
         carroCombate.atirar();
 
+        carroNormal.sofrerDano(10);
+
         carroNormal.info();
         carroNormal02.info();
         carroCombate.info();
