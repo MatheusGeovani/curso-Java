@@ -22,7 +22,5 @@ public class aula03 {
         estudo02.exercicios();
         estudo02.assistindo();
         estudo02.linguagem();
-
-
     }
 }

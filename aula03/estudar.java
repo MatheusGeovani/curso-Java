@@ -12,7 +12,7 @@ public class estudar {
         this.linguagem = "java";
         this.canal = "curso em video";
     }
-    void status(){
+    void status(){ 
         System.out.println("Linguagem: "+ this.linguagem);
         System.out.println("Canal: "+ this.canal);
         System.out.println("Disciplina: "+ this.disciplina);
