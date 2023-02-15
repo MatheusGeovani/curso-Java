@@ -12,6 +12,7 @@ public class MainBanco {
         c1.fecharConta();
         c1.setSacar(150);
         c1.fecharConta();
+        c1.setPagarMensalidade();
         
         
        

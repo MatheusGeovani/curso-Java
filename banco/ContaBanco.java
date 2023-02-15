@@ -13,12 +13,12 @@ public class ContaBanco {
     public float depositar;
 
     public ContaBanco(){
-        this.numConta = 00000;
+        this.setNumDaConta(0000);;
         this.tipoConta = "Sem conta";
         // this.cc = cc;
         // this.cp = cp;
         this.dono = dono;
-        this.saldo = 0;
+        this.setSaldo(0);
         this.status = false;
     }
     public int getNumDaConta(){
@@ -101,9 +101,9 @@ public class ContaBanco {
         return this.mensalidade;
     }
     public void setPagarMensalidade(){
-        if(tipoConta == getCorrente()){
+        if(tipoConta == getCorrente() && status == true){
             saldo -= 12;
-        }else {
+        }else if(tipoConta == getPoupanca() && status == true) {
             saldo -= 20;
         }
     }
