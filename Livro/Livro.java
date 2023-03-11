@@ -8,15 +8,19 @@ public class Livro implements interfaceLivro {
     private boolean aberto;
     private Pessoa leitor;
 
-    public void detalhes(){
-        return "Livro{" + "Titulo=" + titulo + ", autor=" + autor + ", totPaginas=" + totPaginas
-                + ", pagAtual=" + pagAtual + ", aberto=" + aberto + ", leitor=" + leitor };
+    public String detalhes(){
+        return "Livro{" + "Titulo=" + titulo + ", autor=" 
+                + autor + ", totPaginas=" + totPaginas
+                + ", pagAtual=" + pagAtual + ", aberto=" 
+                + aberto + ", leitor=" + leitor +'}';
     }
 
-    public Livro(){
+    public Livro(String titulo, String autor, int totPaginas, Pessoa leitor){
         this.titulo = "Desconhecido";
         this.autor = "Desconhecido";
         this.totPaginas = 0;
+        this.pagAtual = 0;
+        this.aberto = false;
         this.leitor = leitor;
     }
 
@@ -61,7 +65,20 @@ public class Livro implements interfaceLivro {
     // Metodos abstratos
     @Override
     public void abrir(){
-        setAberto(true);
+        this.aberto = true;
+    }
+    @Override
+    public void fechar(){
+        this.aberto = false;
+    }
+    public void folhear(int p){
+        this.pagAtual = p;
+    }
+    public void avancarPag(){
+        this.pagAtual += 1;
+    }
+    public void voltarPag(){
+        this.pagAtual -= 1;
     }
 
 }
